@@ -13,9 +13,9 @@ three print "Fizz" instead of the number and for the
 
 // loop through every number up to the stop count number (100)
 
-// if the number is a multiple of 3 , print " Fizz"
+// if the number is a multiple of 3 , print " Fizz" (multiples of 3 have a remainder of 0 when divided by 3)
 
-// if the number is a multiple of 5 print " Buzz"
+// if the number is a multiple of 5 print " Buzz" (multiples of 5 have a remainder of 0 when divided by 5)
 
 // if the number is a multiple of 3 and 5 print "FizzBuzz"
 
@@ -24,7 +24,23 @@ three print "Fizz" instead of the number and for the
 // add 1 to the count after each loop 
 
 function fizzBuzz(){
+let counter = 0;
+let maxNum = 100;
 
+// create for loop to iterate through evry number up to 100 
+while ( counter <= maxNum){
 
+    if (counter % 3 === 0 && counter % 5 !== 0 ){
+        console.log("Fizz")
+             } else if (counter % 5 === 0 && counter % 3 !== 0 ){
+         console.log("Buzz")
+             } else if(counter % 3 === 0 && counter % 5 === 0 ){
+        console.log("FizzBuzz")
+      } else {
+        console.log(maxNum)
+      }
+      // iterate the counter variable after each loop 
+      counter = counter + 1
+        }
+    }
 
-}
