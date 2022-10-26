@@ -27,7 +27,7 @@ function fizzBuzz(){
 let counter = 0;
 let maxNum = 100;
 
-// create for loop to iterate through evry number up to 100 
+// create while loop to iterate through every number up to 100 
 while ( counter <= maxNum){
 
     if (counter % 3 === 0 && counter % 5 !== 0 ){
