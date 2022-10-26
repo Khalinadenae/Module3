@@ -37,10 +37,12 @@ while ( counter <= maxNum){
              } else if(counter % 3 === 0 && counter % 5 === 0 ){
         console.log("FizzBuzz")
       } else {
-        console.log(maxNum)
+        console.log(counter)
       }
       // iterate the counter variable after each loop 
       counter = counter + 1
         }
     }
 
+
+    fizzBuzz()
