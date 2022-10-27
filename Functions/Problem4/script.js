@@ -25,22 +25,21 @@ three print "Fizz" instead of the number and for the
 
 function fizzBuzz(){
 let counter = 0;
-let maxNum = 100;
 
 // create while loop to iterate through every number up to 100 
-while ( counter <= maxNum){
+  for(let i = 0; i <101; i++) {
 
     if (counter % 3 === 0 && counter % 5 !== 0 ){
         console.log("Fizz")
-             } else if (counter % 5 === 0 && counter % 3 !== 0 ){
-         console.log("Buzz")
-             } else if(counter % 3 === 0 && counter % 5 === 0 ){
+    } else if (counter % 5 === 0 && counter % 3 !== 0 ){
+        console.log("Buzz")
+    } else if(counter % 3 === 0 && counter % 5 === 0 ){
         console.log("FizzBuzz")
-      } else {
+    } else {
         console.log(counter)
-      }
-      // iterate the counter variable after each loop 
-      counter = counter + 1
+    }
+    // iterate the counter variable after each loop 
+    counter = counter + 1
         }
     }
 
