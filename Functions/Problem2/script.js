@@ -13,7 +13,7 @@ for(let i = 0; i < str.length; i++){
     //loop through array of vowels for each character
     for(let j = 0; j < vowels.length; j++){
     // check if current index of the string is a vowel
-    if(str[i] === vowels[i]){
+    if(str[i] === vowels[j]){
         // if the index of string contains a vowel, increment the vowel counter
         vowelCount++
       }
