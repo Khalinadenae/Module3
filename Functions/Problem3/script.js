@@ -12,11 +12,14 @@ two arguments, a string and a letter and the
 
 
 function findLetter(str, letter){
+    // set arguments to lowercase 
+    str = str.toLowerCase()
+    letter = letter.toLowerCase()
     let letterCount = 0;
 
     for(let i = 0; i < str.length; i++){
         if(str[i] === letter ){
-            letterCount = letterCount + 1
+        letterCount = letterCount + 1
         }
     }
     console.log(letterCount)
