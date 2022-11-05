@@ -10,3 +10,13 @@ let students = [
     {firstName : "John" , lastName : "Doe" , age : 10 }
 ]
 
+// create function that takes in array and logs the first and last names of all people 
+
+function fullName(arr){
+
+let fullName; 
+fullName = arr.map(el => `${el.firstName} ${el.lastName}`)
+console.log(fullName)
+}
+
+fullName(students)
